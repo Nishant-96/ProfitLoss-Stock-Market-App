@@ -32,13 +32,15 @@ input{
     padding: 0.5rem;
     border-radius: 0.5rem;
     display: block;
+    margin-left:7rem;
+    margin-right:7rem;
 }
 
 button{
     display: block;
-    margin-top:1rem;
-    margin-left:10rem;
-    margin-right:10rem;
+    margin-top:1.5rem;
+    margin-left:15rem;
+    margin-right:15rem;
     padding: 0.5rem;
     background: transparent;
     font-weight: bold;
@@ -46,4 +48,10 @@ button{
     border-radius: 0.8rem;
     color: cyan;
     border-color: cyan;
+}
+
+#error-box{ 
+    padding: 0.5rem; 
+    margin-top:1rem;
+    color: red;
 }
