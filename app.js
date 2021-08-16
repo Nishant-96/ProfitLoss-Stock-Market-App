@@ -27,7 +27,7 @@ function checkProfitOrLoss(){
             var lossPercentage = ((costPrice-stockPrice)/costPrice)*100;
             
             outputBox.style.display = "block";
-            outputBox.innerHTML=  `<div style="background-color: rgb(255, 255,255,0.2); padding: 0.5rem; margin-top:1.5rem">You lost ${lossPercentage}%. Your total loss is ₹${lossAmount}</div>`
+            outputBox.innerHTML=  `<div style="background-color: rgb(255, 255,255,0.2); padding: 0.5rem; margin-top:1.5rem">You lost ${lossPercentage.toFixed(2)}%. Your total loss is ₹${lossAmount.toFixed(2)}</div>`
             }
             //profit
             else if(costPrice < stockPrice ) {
@@ -36,7 +36,7 @@ function checkProfitOrLoss(){
             var profitPercentage = ((stockPrice-costPrice)/costPrice)*100;
             
             outputBox.style.display = "block";
-            outputBox.innerHTML= `<div style="background-color: rgb(255, 255,255,0.2); padding: 0.5rem; margin-top:1.5rem">You gained ${profitPercentage}%. Your total profit is ₹${profitAmount}</div>`
+            outputBox.innerHTML= `<div style="background-color: rgb(255, 255,255,0.2); padding: 0.5rem; margin-top:1.5rem">You gained ${profitPercentage.toFixed(2)}%. Your total profit is ₹${profitAmount.toFixed(2)}</div>`
             }else{
 
                 outputBox.style.display = "block";
